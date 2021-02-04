@@ -95,13 +95,6 @@ addButton.onclick = () => {
     }
 };
 
-    // keycode
-    input1.addEventListener('keyup', (e) => {
-        if (e.keyCode === 13) {
-            monTab.push(input1)
-            console.log(input1.value);
-        }
-    });
 
 
 

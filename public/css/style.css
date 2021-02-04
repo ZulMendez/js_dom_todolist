@@ -1,0 +1,42 @@
+body {
+    background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+}
+
+section{
+    background-color: #353B40;
+    border-radius: 5px;
+    padding: 50px;
+
+}
+.input1{
+    border-radius: 5px;
+    color: black;
+}
+
+h2{
+    color: white;
+    justify-content: center;
+    display: flex;
+    padding-top: 10px;
+}
+
+.btn{
+    margin: 0px 5px;
+}
+
+.tache{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.myBtn{
+    margin-left: 70px;
+}
+.myIn{
+    margin-right: 30px;
+}
+
+ul {
+    list-style-type: none;
+}

@@ -3,19 +3,15 @@ body {
 }
 
 section{
-    background-color: #353B40;
+    background-color: #4c545a;
     border-radius: 5px;
     padding: 50px;
-    margin: 50px;
-    box-shadow: 0 7px rgb(37, 37, 37);
 
 }
+
 .input1{
     border-radius: 5px;
-    color: black;
-    font-size: 25px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0 5px;
+
 }
 
 h2{
@@ -23,15 +19,13 @@ h2{
     justify-content: center;
     display: flex;
     padding-top: 10px;
-    font-size: 50px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .btn{
     margin: 0px 5px;
 }
 
-.tache{
+.task{
     display: flex;
     justify-content: center;
     margin-top: 50px;
@@ -39,11 +33,60 @@ h2{
 
 .myBtn{
     margin-left: 70px;
+    display: flex;
 }
 .myIn{
     margin-right: 30px;
 }
 
-ul {
-    list-style-type: none;
+.todo-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    min-width: 50%;
+    list-style: none;
+
+}
+.todo{
+    margin: 10px;
+    background: white;
+    color: black;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-item{
+    flex: 1;
+    padding: 5px;
+}
+
+.supr-btn, .check-btn, .modifTache{
+    background-color: rgb(155, 27, 23);
+    color: white;
+    border: none;
+    margin-right: 1px;
+}
+.check-btn{
+    background-color: rgb(30, 55, 167);
+    border-right: 1px black solid;
+}
+.modifTache{
+    background-color: yellow;
+    color: black;
+}
+.fa-trash, .fa-check, .fa-edit{
+    pointer-events: none;
+}
+.done{
+    background-color: rgb(23, 23, 175);
+    color: white;
+}
+
+.mesBtn{
+    display: flex;
 }

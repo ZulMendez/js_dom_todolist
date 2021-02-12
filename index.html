@@ -17,38 +17,24 @@
 </head>
 <body>
     <!-- TO DO LIST -->
-    <!-- PREMIERE SECTION -->
     <section class="container">
         <h2>To Do List</h2>
-        <div class="tache">
-            <input class="input1" type="text" placeholder="Tâche" data-key="13">
-            <button type="button" class="btn btn-outline-light">Add</button>
-            <button type="button" class="btn btn-outline-primary">All</button>
-            <button type="button" class="btn btn-outline-success">Done</button>
-            <button type="button" class="btn btn-outline-danger">To Do</button>
-            <!-- CONTENU DE MA LISTE DE CHOSE A FAIRE -->
+        <div class="task">
+            <div class="myIn">
+                <input class="input1" type="text" placeholder="Tache">
+            </div>
+            <div class="mesBtn">
+                <button type="button" class="btn btn-outline-primary">All</button>
+                <button type="button" class="btn btn-outline-success">Done</button>
+                <button type="button" class="btn btn-outline-danger">To Do</button>
+            </div>
         </div>
-        <div class = "contenu">
-            <ul id = "liste1">
-            </ul>
+        <div class="todo-container">
+            <ul class="todo-list"></ul>
         </div>
-        <!-- LIST TASK DONE -->
-        <div class="done">
-            <ul id = "liste2">
-            </ul>
-        </div>
-        <!-- LIST TASK TO DO -->
-        <div class="toDo">
-            <ul id = "liste3">
-            </ul>
-        </div>
-        <!-- ALL LIST -->
-        <div class="all">
-            <ul id = "liste4">
-            </ul>
-        </div>
-        </section>
+    </section>
+
         <script type="module" src="./public/js/main.js"></script>
-        <script type="module" src="./public/js/_events.js"></script>
+        <script type="module" src="./public/js/events.js"></script>
 </body>
 </html>

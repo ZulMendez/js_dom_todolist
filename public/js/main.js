@@ -1,6 +1,5 @@
 import {myBtn, myInp, myList} from "./events.js"
 
-
 // fonction 
 let addTodo = (e) => {
     if (e.keyCode == 13) {
@@ -60,6 +59,14 @@ let supprCheck = (e) => {
             input2.setAttribute('class', 'newI');
             span2.parentNode.replaceChild(input2, span2);
             let input2M = document.querySelector('.newI');
+            input2M.addEventListener('keyup', (e) => {
+                if (e.keyCode === 13) {
+                    let valeurI = input2.value;
+                    let span2 = document.createElement('span');
+                    span2.innerText = valeurI;
+                    parent.replaceChild(span2, input2); 
+                }
+            })
     }
 }
 
@@ -72,7 +79,7 @@ let filterTodo = (e) => {
     let list = Array.from(myList.children);
     console.log(todos);
     console.log(list);
-    console.log("engh");
+    console.log("length");
     console.log(list.length);
     for (let i = 0; i < list.length; i++) {
         console.log(i);
